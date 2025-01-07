@@ -179,8 +179,17 @@ const Resume =() =>{
     return (
     <motion.div initial={{opacity: 0}} animate={{opacity:1, transition:{delay:2.4, duration:0.4,ease:"easeIn" },}} className="min-h-[80vh] flex items-center  justify-center py-12 xl:py-0">
         <div className="container mx-auto">
+            {/* why hire test */}
+            
+            
             <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
                 <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+
+                    <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                    <h3 className="text-5xl font-bold text-white">Why hire me?</h3>
+                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">I bring innovation, reliability, and a proven ability to turn ideas into impactful solutions.</p>
+                    </div>
+
                     <TabsTrigger value="experience">Experience</TabsTrigger>
                     <TabsTrigger value="education">Education</TabsTrigger>
                     <TabsTrigger value="skill">Skills</TabsTrigger>
