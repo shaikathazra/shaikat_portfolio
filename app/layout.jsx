@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from"@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import { icons } from "lucide-react";
 
 const jetbrainsMono = JetBrains_Mono({ 
   subsets: ["latin"] ,
@@ -15,6 +16,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   title: "Shaikat Hazra",
   description: "Bring Your Ideas to Life",
+  icons:{
+    icon:['./favicon.ico?v=4']
+  }
 };
 
 export default function RootLayout({ children }) {
